@@ -12,5 +12,20 @@
     <h1>Hello Welcome to Project artiest</h1>
 
 
+    {% for optreden in optredens %}
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ optreden.aanvang }}</h6>
+                <p class="card-text">{{ optreden.Datum|date("m/d/Y") }}</p>
+                <p class="card-text">{{ optreden.Zaal }}</p>
+                <p class="card-text">{{ optreden.MaxSeats }}</p>
+                
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    {%  endfor %}
+
 </div>
 {% endblock %}
