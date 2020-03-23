@@ -105,5 +105,8 @@ class Optreden
         $this->maxSeats = $maxSeats;
 
         return $this;
+
+
     }
+
 }

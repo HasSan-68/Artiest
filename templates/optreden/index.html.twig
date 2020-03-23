@@ -15,6 +15,7 @@
         <thead>
             <tr>
                 <th>Id</th>
+                <th>artiest</th>
                 <th>Datum</th>
                 <th>Aanvang</th>
                 <th>Zaal</th>
@@ -26,6 +27,7 @@
         {% for optreden in optredens %}
             <tr>
                 <td>{{ optreden.id }}</td>
+                <td>{{ optreden.artiestid }}</td>
                 <td>{{ optreden.Datum ? optreden.Datum|date('Y-m-d H:i:s') : '' }}</td>
                 <td>{{ optreden.aanvang }}</td>
                 <td>{{ optreden.Zaal }}</td>

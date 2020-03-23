@@ -120,7 +120,7 @@ class Artiest
      */
     public function __toString()
     {
-       return $this->id.'->'.$this->getNaam();
+       return $this->id.'->'.$this->getDatum();
     }
 
 }
